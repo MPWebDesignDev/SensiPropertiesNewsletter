@@ -39,7 +39,7 @@ export default async function handler(req, res) {
       // Step B: Send the React Email
       // Note: The 'from' domain must be verified in your Resend account settings!
       const emailResponse = await resend.emails.send({
-        from: 'Sensi Club <hello@sensiproperties.com>', 
+        from: 'Sensi Club <hello@sensi-properties.com>', 
         to: email,
         subject: 'Welcome to Sensi Club',
         react: <WelcomeEmail firstName={firstName} />
